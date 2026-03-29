@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>🛒 Shop Shop</h1>
+    <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+</header>
+
+<div class="menu">
+    <button onclick="filter('all')">ทั้งหมด</button>
+    <button onclick="filter('electronics')">📱</button>
+    <button onclick="filter('fashion')">👕</button>
+    <button onclick="filter('food')">🍔</button>
+</div>
+
+<div class="products" id="productList"></div>
+
+<!-- overlay -->
+<div id="overlay" class="overlay"></div>
+
+<!-- cart -->
+<div id="cart" class="cart-panel">
+    <div class="cart-header">
+        <h3>🛒 ตะกร้า</h3>
+        <button id="closeCart">✖</button>
+    </div>
+
+    <ul id="cartList"></ul>
+
+    <ul id="cart-items"></ul>
+<p>รวม: <span id="total-price">0</span> บาท</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
